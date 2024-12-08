@@ -1,0 +1,21 @@
+{
+  "resource": "/{proxy+}",
+  "path": "/teams",
+  "httpMethod": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer test-token"
+  },
+
+  "requestContext": {
+    "resourcePath": "/{proxy+}",
+    "httpMethod": "get",
+    "requestId": "12345-test-request",
+    "identity": {
+      "sourceIp": "127.0.0.1",
+      "userAgent": "PostmanRuntime/7.26.8"
+    }
+  },
+  "body": "",
+  "isBase64Encoded": false
+}
