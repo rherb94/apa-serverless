@@ -1,0 +1,10 @@
+version = 0.1
+
+[default.global.parameters]
+stack_name = "apa-serverless"
+region = "us-east-1"
+
+[default.sync.parameters]
+template_file = "/Users/ryanherb/dev/apa-serverless/template.yaml"
+dependency_layer = false
+watch = true

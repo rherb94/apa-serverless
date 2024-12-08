@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Template for managing multiple Lambdas
+Resources:
+  GetTeamsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambdas/getTeams/dist/handler.handler
+      Runtime: nodejs18.x
+      CodeUri: GetTeamsFunction
+      FunctionName: getTeams
+      Description: Lambda function to get teams
+      MemorySize: 128
+      Timeout: 5
+      Policies:
+      - AWSLambdaBasicExecutionRole
+    Metadata:
+      SamResourceId: GetTeamsFunction
+  GetPlayersFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambdas/getPlayers/dist/handler.handler
+      Runtime: nodejs18.x
+      CodeUri: GetPlayersFunction
+      FunctionName: getPlayers
+      Description: Lambda function to get players
+      MemorySize: 128
+      Timeout: 5
+      Policies:
+      - AWSLambdaBasicExecutionRole
+    Metadata:
+      SamResourceId: GetPlayersFunction

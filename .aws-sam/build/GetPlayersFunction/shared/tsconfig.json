@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Output compatible with modern runtimes
+    "module": "commonjs", // Use CommonJS for compatibility with Node.js
+    "declaration": true, // Generate type declaration files (.d.ts)
+    "outDir": "../dist/shared", // Output directory for compiled files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Allow importing ES modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming
+    "skipLibCheck": true // Skip library type checking
+  },
+  "include": ["**/*.ts"], // Include all TypeScript files in this directory
+  "exclude": ["node_modules", "**/*.test.ts"] // Exclude tests and node_modules
+}
