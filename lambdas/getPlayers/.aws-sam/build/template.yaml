@@ -1,0 +1,9 @@
+Resources:
+  GetTeams:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: GetTeams:dist/handler.handler
+      Runtime: nodejs18.x
+      CodeUri: GetTeams
+    Metadata:
+      SamResourceId: GetTeams

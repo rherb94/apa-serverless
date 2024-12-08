@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": ".", // Add this line
+    "paths": {
+      "shared/*": ["shared/*"]
+    }
+  },
+  "include": ["lambdas/**/*", "shared/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
